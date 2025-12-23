@@ -1,7 +1,7 @@
 from .base import Base
 from django.db import models
 
-class Service(models.Model):
+class Service(Base):
     name = models.CharField(max_length=255)
     service_price = models.TextField()
 

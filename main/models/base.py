@@ -2,8 +2,8 @@ from django.db import models
 
 
 class Base(models.Model):
-    title = models.CharField(max_length=255)
-    description = models.TextField()
+    title = models.CharField(max_length=255, null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
 
 
     class Meta:

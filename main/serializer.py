@@ -21,7 +21,7 @@ class AboutSerializer(serializers.ModelSerializer):
 class ServiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Service
-        fields = '__all__'
+        fields = ['id', 'name', 'service_price']
 
 class ServicesDateSerializer(serializers.ModelSerializer):
     class Meta:
