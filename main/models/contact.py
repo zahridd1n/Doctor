@@ -22,6 +22,7 @@ class OurData(models.Model):
     address = models.CharField(max_length=255)
     latitude = models.CharField(max_length=255, null=True, blank=True)
     longitude = models.CharField(max_length=255, null=True, blank=True)
+    location = models.TextField( null=True, blank=True)
 
     def __str__(self):
         return self.phone
